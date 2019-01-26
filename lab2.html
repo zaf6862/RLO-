@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>how to use</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="navig.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="application/javascript">
+
+  function resizeIFrameToFitContent( iFrame ) {
+
+      iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
+      iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+  }
+
+  window.addEventListener('DOMContentLoaded', function(e) {
+
+      var iFrame = document.getElementById( 'iFrame1' );
+      resizeIFrameToFitContent( iFrame );
+
+      // or, to resize all iframes:
+      var iframes = document.querySelectorAll("iframe");
+      for( var i = 0; i < iframes.length; i++) {
+          resizeIFrameToFitContent( iframes[i] );
+      }
+  } );
+
+  </script>
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 left-menu">
+      <div class="logo"><i class="fa fa-coffee "></i>
+        <div>VIZ JAVA</div>
+      </div>
+      <div class="accordion">
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-1" value="toggle"/>
+          <label for="section-1"><span>Intro</span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="howtouse.html">How to use</a></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-2" value="toggle"/>
+          <label for="section-2"> <span>Primitive and reference types</span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="types.html">types</a></span></li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-3" checked="toggle"/>
+          <label for="section-3"> <span>Array</span></label>
+          <div class="content">
+            <ul>
+              
+              <li><i class="fa fa-start"></i><span><a href="arrays_1.html">Arrays_1</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="arrays_2.html">Arrays_2</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="arrays_3.html">Arrays_3</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="arrays.html">Advacned</a></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-4" value="toggle"/>
+          <label for="section-4"> <span>Recursion</span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="recur.html">Start</a></span></li>
+            </ul>
+          </div>
+        </div>
+
+
+
+
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-5" value="toggle"/>
+          <label for="section-5"> <span>forloop</span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="forloop.html">Basic</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="forloop_1.html">Medium</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="forloop_2.html">Advanced</a></span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-6" value="toggle"/>
+          <label for="section-6"> <span>While Loops </span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="Whileloop_1.html">Basic</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="Whileloop_2.html">Medium</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="Whileloop_3.html">Advanced</a></span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-7" value="toggle"/>
+          <label for="section-7"> <span>Lab Reviews </span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="lab1.html">Lab 1</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="lab2.html">Lab 2</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="lab3.html">Lab 3</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="lab4.html">Lab 4</a></span></li>
+              
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-md-9 right-content">
+
+	<p>Goal: understand the class constructor and methods.
+
+Run the code, see the visulization  and think about the questions: 
+What does getAge(), getSalary() do? 
+What does setBounus() do ? 
+What does toString() do?
+
+</p>
+
+<iframe width="1000" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=public%20class%20YourClassNameHere%20%7B%0A%20%20%20%20public%20static%20void%20main%20%28String%5B%5D%20args%29%7B%0A%20%20%20%20Employee%20emp%20%3D%20new%20Employee%28%22Grace%22,%22Hopper%22,35,%201000.00%29%3B%0A%20%20%20%20%0A%20%20%20%20emp.setBonus%28%29%3B%0A%20%20%20%20int%20empAge%20%3D%20emp.getAge%28%29%3B%0A%20%20%20%20%0A%20%20%20%20System.out.print%28%22The%20employee's%20name%20is%20%22%20%2B%20emp.toString%28%29%29%3B%0A%20%20%20%20System.out.println%28%22%20and%20her%20salary%20with%20bonus%20is%20%22%20%2B%20emp.getSalary%28%29%29%3B%0A%20%20%20%20%0A%20%20%20%20emp.incrementAge%28%29%3B%0A%20%20%20%20System.out.println%28%22The%20employee%20is%20now%20%22%20%2B%20emp.getAge%28%29%20%2B%20%22%20years%20old.%22%29%3B%20%20%20%0A%20%20%0A%20%20%7D%0A%7D%0A%20%20%0A%20%20class%20Employee%7B%0A%20%20%0A%20%20private%20int%20age%3B%0A%20%20private%20%20double%20salary%3B%0A%20%20private%20%20String%20fName%3B%0A%20%20private%20%20String%20lName%3B%0A%20%20%0A%20%20%0A%20%20%20%0A%20%20public%20Employee%28String%20fn,%20String%20ln,%20int%20age,%20double%20salary%29%7B%0A%20%20%20%20this.age%3Dage%3B%0A%20%20%20%20this.salary%3Dsalary%3B%0A%20%20%20%20fName%20%3D%20fn%3B%0A%20%20%20%20lName%20%3D%20ln%3B%0A%20%20%7D%0A%20%20%0A%20%20public%20int%20getAge%28%29%7B%0A%20%20%20%20%20return%20age%3B%0A%20%20%7D%0A%20%20%0A%20%20%20public%20void%20incrementAge%28%29%7B%0A%20%20%20%20%20%20age%20%2B%3D1%3B%0A%20%20%7D%0A%20%20%0A%20%20public%20double%20getSalary%28%29%7B%0A%20%20%20%20%20return%20salary%3B%0A%20%20%7D%0A%20%20%0A%20%20public%20void%20setBonus%28%29%7B%0A%20%20%20%20%20salary%20%3D%20salary%20%2B%20salary%20*.05%3B%0A%20%20%7D%0A%20%20%7D&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+
+<!-- <iframe width="800" height="500" frameborder="0" src=""> </iframe> -->
+
+
+
+      <p>Great. Now that you know how to use this, let's continue to the next lesson.</p>
+      <p><a href="lab3.html">next lesson</a></p>      
+    </div>
+  </div>
+</div>
+  
+
+</body>
+</html>
+

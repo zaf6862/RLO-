@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>how to use</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="navig.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="application/javascript">
+
+  function resizeIFrameToFitContent( iFrame ) {
+
+      iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
+      iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+  }
+
+  window.addEventListener('DOMContentLoaded', function(e) {
+
+      var iFrame = document.getElementById( 'iFrame1' );
+      resizeIFrameToFitContent( iFrame );
+
+      // or, to resize all iframes:
+      var iframes = document.querySelectorAll("iframe");
+      for( var i = 0; i < iframes.length; i++) {
+          resizeIFrameToFitContent( iframes[i] );
+      }
+  } );
+
+  </script>
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 left-menu">
+      <div class="logo"><i class="fa fa-coffee "></i>
+        <div>VIZ JAVA</div>
+      </div>
+      <div class="accordion">
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-1" value="toggle"/>
+          <label for="section-1"><span>Intro</span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="howtouse.html">How to use</a></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-2" value="toggle"/>
+          <label for="section-2"> <span>Primitive and reference types</span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="types.html">types</a></span></li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-3" checked="toggle"/>
+          <label for="section-3"> <span>Array</span></label>
+          <div class="content">
+            <ul>
+              
+              <li><i class="fa fa-start"></i><span><a href="arrays_1.html">Arrays_1</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="arrays_2.html">Arrays_2</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="arrays_3.html">Arrays_3</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="arrays.html">Advacned</a></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-4" value="toggle"/>
+          <label for="section-4"> <span>Recursion</span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="recur.html">Start</a></span></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-5" value="toggle"/>
+          <label for="section-5"> <span>forloop</span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="forloop.html">Basic</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="forloop_1.html">Medium</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="forloop_2.html">Advanced</a></span></li>
+            </ul>
+          </div>
+        </div>
+<div class="section">
+          <input type="radio" name="accordion-1" id="section-6" value="toggle"/>
+          <label for="section-6"> <span>While Loops </span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="Whileloop_1.html">Basic</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="Whileloop_2.html">Medium</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="Whileloop_3.html">Advanced</a></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-7" value="toggle"/>
+          <label for="section-7"> <span>Lab Reviews </span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="lab1.html">Lab 1</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="lab2.html">Lab 2</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="lab3.html">Lab 3</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="lab4.html">Lab 4</a></span></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9 right-content">
+
+	<p> This program illustrates the use of continue and break in for loop.</p>
+
+<!-- <iframe width="800" height="500" frameborder="0" src=> </iframe> -->
+
+<!-- <iframe width="800" height="500" frameborder="0" src=""> </iframe> -->
+
+<iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=//%20While-loop%20%20Third%20Level%0A//%20This%20program%20illustrates%20the%20use%20of%20continue%20and%20break%20in%20for%20loop%0A%0Apublic%20class%20Main%20%7B%0A%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20int%5B%5D%20numbers%20%3D%20%7B10,%2020,%2030,%2040,%2050%7D%3B%0A%0A%20%20%20%20%20%20%20%20//%20First%20line%3A%20while%20loop%20with%20continue%0A%20%20%20%20%20%20%20%20int%20i%20%3D%200%3B%0A%20%20%20%20%20%20%20%20while%28i%20%3C%205%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20//%20When%20x%20is%20equal%20to%2030,%20while%20loop%20will%20jump%20to%2040%20directly%20without%20outputting%0A%20%20%20%20%20%20%20%20%20%20%20%20if%28numbers%5Bi%5D%20%3D%3D%2030%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20i%2B%2B%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20continue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20System.out.print%28numbers%5Bi%5D%20%2B%20%22%20%22%29%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20i%2B%2B%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20System.out.print%28%22%5Cn%22%29%3B%0A%0A%20%20%20%20%20%20%20%20//%20Second%20line%3A%20while%20loop%20with%20break%0A%20%20%20%20%20%20%20%20i%20%3D%200%3B%0A%20%20%20%20%20%20%20%20while%28i%20%3C%205%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20//%20When%20x%20is%20equal%20to%2030,%20while%20loop%20will%20jump%20out%20directly%0A%20%20%20%20%20%20%20%20%20%20%20%20if%28numbers%5Bi%5D%20%3D%3D%2030%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20System.out.print%28numbers%5Bi%5D%20%2B%20%22%20%22%29%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20i%2B%2B%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20System.out.print%28%22%5Cn%22%29%3B%0A%20%20%20%20%7D%0A%7D%0A&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+
+      <p>Great. Now that you know how to use this, let's continue to the next lesson.</p>
+      <p><a href="lab1.html">next lesson</a></p>      
+    </div>
+  </div>
+</div>
+  
+
+</body>
+</html>
+

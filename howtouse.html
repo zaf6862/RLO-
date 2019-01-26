@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>how to use</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="navig.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="application/javascript">
+
+  function resizeIFrameToFitContent( iFrame ) {
+
+      iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
+      iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+  }
+
+  window.addEventListener('DOMContentLoaded', function(e) {
+
+      var iFrame = document.getElementById( 'iFrame1' );
+      resizeIFrameToFitContent( iFrame );
+
+      // or, to resize all iframes:
+      var iframes = document.querySelectorAll("iframe");
+      for( var i = 0; i < iframes.length; i++) {
+          resizeIFrameToFitContent( iframes[i] );
+      }
+  } );
+
+  </script>
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 left-menu">
+      <div class="logo"><i class="fa fa-coffee "></i>
+        <div>VIZ JAVA</div>
+      </div>
+      <div class="accordion">
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-1" checked="toggle"/>
+          <label for="section-1"><span>Intro</span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="howtouse.html">How to use</a></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-2" value="toggle"/>
+          <label for="section-2"> <span>Primitive and reference types</span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="types.html">Types</a></span></li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-3" value="toggle"/>
+          <label for="section-3"> <span>Array</span></label>
+          <div class="content">
+            <ul>
+              
+              <li><i class="fa fa-start"></i><span><a href="arrays_1.html">Arrays_1</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="arrays_2.html">Arrays_2</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="arrays_3.html">Arrays_3</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="arrays.html">Advanced</a></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-4" value="toggle"/>
+          <label for="section-4"> <span>Recursion</span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="recur.html">Start</a></span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-5" value="toggle"/>
+          <label for="section-5"> <span>forloop</span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="forloop.html">Basic</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="forloop_1.html">Medium</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="forloop_2.html">Advanced</a></span></li>
+            </ul>
+          </div>
+        </div>
+
+
+<div class="section">
+          <input type="radio" name="accordion-1" id="section-6" value="toggle"/>
+          <label for="section-6"> <span>While Loops </span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="Whileloop_1.html">Basic</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="Whileloop_2.html">Medium</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="Whileloop_3.html">Advanced</a></span></li>
+            </ul>
+          </div>
+        </div>
+
+          <div class="section">
+          <input type="radio" name="accordion-1" id="section-7" value="toggle"/>
+          <label for="section-7"> <span>Lab Reviews </span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="lab1.html">Lab 1</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="lab2.html">Lab 2</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="lab3.html">Lab 3</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="lab4.html">Lab 4</a></span></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9 right-content">
+      <p>For this specific tutorial, we are going to explore some basics of this tool.</p>
+      <p>Take a close look at the interface, you should see that there is a red arrow pointing to "int i = 0;"</p>
+      <p>Let's run the code by clicking "Forward" button below.</p>
+      <p>Now, let's suppose that you already know the ++ operator and want to execute print statement on line 6. Drag the bar towards your right until the red arrow runs past line 6.</p>
+      <p>You should see that "1" is printed out on the right-top.</p>
+      <p>Continue doing this until the red arrow reaches the last line. None the code finish executing.</p>
+      <iframe src="http://pythontutor.com/iframe-embed.html#code=public%20class%20Tutorial0%20%7B%20%20%20%20%0A%0A%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%20%7B%0A%20%20%20%20%20int%20i%20%3D%200%3B%0A%20%20%20%20%20i%2B%2B%3B%0A%20%20%20%20%20System.out.println%28i%29%3B%0A%20%20%20%20%20%0A%20%20%20%20%20double%20f%20%3D%202.0%3B%0A%20%20%20%20%20f%20%3D%20f%20%2B%202.7%3B%0A%20%20%20%20%20System.out.println%28f%29%3B%0A%20%20%20%20%20%0A%20%20%20%20%20String%20str%20%3D%20%22abc%22%3B%0A%20%20%20%20%20str%20%3D%20str%20%2B%20%22def%22%3B%0A%20%20%20%20%20System.out.println%28str%29%3B%0A%20%20%20%7D%0A%20%20%20%20%0A%7D%0A&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:600px;width:100%;border:none;overflow:hidden;"></iframe>
+      <p>Great. Now that you know how to use this, let's continue to the next lesson.</p>
+      <p><a href="types.html">next lesson</a></p>      
+    </div>
+  </div>
+</div>
+  
+
+</body>
+</html>
+

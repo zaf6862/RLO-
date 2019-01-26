@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>how to use</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="navig.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="application/javascript">
+
+  function resizeIFrameToFitContent( iFrame ) {
+
+      iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
+      iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+  }
+
+  window.addEventListener('DOMContentLoaded', function(e) {
+
+      var iFrame = document.getElementById( 'iFrame1' );
+      resizeIFrameToFitContent( iFrame );
+
+      // or, to resize all iframes:
+      var iframes = document.querySelectorAll("iframe");
+      for( var i = 0; i < iframes.length; i++) {
+          resizeIFrameToFitContent( iframes[i] );
+      }
+  } );
+
+  </script>
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 left-menu">
+      <div class="logo"><i class="fa fa-coffee "></i>
+        <div>VIZ JAVA</div>
+      </div>
+      <div class="accordion">
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-1" value="toggle"/>
+          <label for="section-1"><span>Intro</span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="howtouse.html">How to use</a></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-2" value="toggle"/>
+          <label for="section-2"> <span>Primitive and reference types</span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="types.html">types</a></span></li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-3" checked="toggle"/>
+          <label for="section-3"> <span>Array</span></label>
+          <div class="content">
+            <ul>
+              
+              <li><i class="fa fa-start"></i><span><a href="arrays_1.html">Arrays_1</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="arrays_2.html">Arrays_2</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="arrays_3.html">Arrays_3</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="arrays.html">Advacned</a></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-4" value="toggle"/>
+          <label for="section-4"> <span>Recursion</span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="recur.html">Start</a></span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-5" value="toggle"/>
+          <label for="section-5"> <span>forloop</span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="forloop.html">Basic</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="forloop_1.html">Medium</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="forloop_2.html">Advanced</a></span></li>
+            </ul>
+          </div>
+        </div>
+
+
+<div class="section">
+          <input type="radio" name="accordion-1" id="section-6" value="toggle"/>
+          <label for="section-6"> <span>While Loops </span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="Whileloop_1.html">Basic</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="Whileloop_2.html">Medium</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="Whileloop_3.html">Advanced</a></span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <input type="radio" name="accordion-1" id="section-7" value="toggle"/>
+          <label for="section-7"> <span>Lab Reviews </span></label>
+          <div class="content">
+            <ul>
+              <li><i class="fa fa-start"></i><span><a href="lab1.html">Lab 1</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="lab2.html">Lab 2</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="lab3.html">Lab 3</a></span></li>
+              <li><i class="fa fa-start"></i><span><a href="lab4.html">Lab 4</a></span></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9 right-content">
+
+	<p>Let's talk about how to declare, instantiate, initialize and traverse a Java array.</p>
+
+<iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=public%20class%20Testarray%20%7B%0A%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%20%7B%0A%20%20%20%20%20%20int%20a%5B%5D%3Dnew%20int%5B5%5D%3B//declaration%20and%20instantiation%20%20%0A%20%20%20%20%20%20a%5B0%5D%3D10%3B//initialization%20%20%0A%20%20%20%20%20%20a%5B1%5D%3D20%3B%20%20%0A%20%20%20%20%20%20a%5B2%5D%3D70%3B%20%20%0A%20%20%20%20%20%20a%5B3%5D%3D40%3B%20%20%0A%20%20%20%20%20%20a%5B4%5D%3D50%3B%20%20%0A%20%20%20%20%20%20//traversing%20array%20%20%0A%20%20%20%20%20%20for%28int%20i%3D0%3Bi%3Ca.length%3Bi%2B%2B%29%20%7B//length%20is%20the%20property%20of%20array%20%20%0A%20%20%20%20%20%20%20%20System.out.println%28a%5Bi%5D%29%3B%20%20%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%7D&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+
+<!-- <iframe width="800" height="500" frameborder="0" src=""> </iframe> -->
+
+
+
+      <p>Great. Now that you know how to use this, let's continue to the next lesson.</p>
+      <p><a href="arrays_2.html">next lesson</a></p>      
+    </div>
+  </div>
+</div>
+  
+
+</body>
+</html>
+
